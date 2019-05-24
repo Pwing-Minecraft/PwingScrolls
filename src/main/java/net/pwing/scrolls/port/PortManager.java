@@ -43,9 +43,9 @@ public class PortManager {
 
     public void initConfig() {
         FileConfiguration config = plugin.getConfig();
-        prefix = config.getString("prefix", ChatColor.GRAY + "[Pwing Scrolls] ");
-        scrollCost = config.getDouble("createScrollCost", 20);
-        config.getStringList("blacklistedWorlds").forEach(world -> blacklistedWorlds.add(Bukkit.getWorld(world)));
+        prefix = ChatColor.translateAlternateColorCodes('&', config.getString("prefix", "&7[Pwing Scrolls] "));
+        scrollCost = config.getDouble("create-scroll-cost", 20);
+        config.getStringList("blacklisted-worlds").forEach(world -> blacklistedWorlds.add(Bukkit.getWorld(world)));
     }
 
     public void addPort(Port port) {
