@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.pwing.scrolls</groupId>
     <artifactId>PwingScrolls</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <name>PwingScrolls</name>
     <description>Alternate warp system designed for Pwing. Some code adapted from Cronos's version.</description>
     <packaging>jar</packaging>
