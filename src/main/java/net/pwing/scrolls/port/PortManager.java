@@ -1,6 +1,7 @@
 package net.pwing.scrolls.port;
 
 import com.earth2me.essentials.User;
+import io.papermc.lib.PaperLib;
 import net.pwing.scrolls.PwingScrolls;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -173,7 +174,7 @@ public class PortManager {
         }
 
         player.sendMessage(getPrefix() + ChatColor.AQUA + "Porting you to " + ChatColor.DARK_AQUA + port.getName() + ChatColor.AQUA + ".");
-        player.teleport(port.getLocation());
+        PaperLib.teleportAsync(player, port.getLocation());
 
         int[] volume = {10, 100, 200, 300, 15, 105, 205, 305};
         for (int i : volume) {
