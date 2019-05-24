@@ -1,0 +1,4 @@
+# PwingScrolls Configuration
+createScrollCost: 5
+blacklistedWorlds:
+- 'Test World'

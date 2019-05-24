@@ -1,0 +1,15 @@
+name: ${project.name}
+main: net.pwing.scrolls.PwingScrolls
+version: ${project.version}
+authors: [Redned, Cronos79]
+description: ${project.description}
+depend: [Vault]
+softdepend: [Essentials]
+commands:
+    pwingscrolls:
+        description: 'PwingScrolls main command.'
+        usage: /pwingscrolls
+        aliases: [ps, portscrolls]
+    port:
+        description: 'Teleport to a specific port location.'
+        usage: /port
