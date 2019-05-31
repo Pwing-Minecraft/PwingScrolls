@@ -42,6 +42,10 @@ public class PwingScrollsCommand implements CommandExecutor {
 
         Player player = (Player) sender;
         if (args.length == 1) {
+            if (args[0].equalsIgnoreCase("help")) {
+                sendHelpMessage(player);
+            }
+
             if (args[0].equalsIgnoreCase("list")) {
                 List<Port> allowedPorts = new ArrayList<Port>();
 
@@ -228,6 +232,7 @@ public class PwingScrollsCommand implements CommandExecutor {
 
     public void sendHelpMessage(Player player) {
         player.sendMessage(header);
+        player.sendMessage(ChatColor.AQUA + "/ps help " + ChatColor.DARK_AQUA + "Views this help menu.");
         player.sendMessage(ChatColor.AQUA + "/ps list " + ChatColor.DARK_AQUA + "Lists all the ports.");
         player.sendMessage(ChatColor.AQUA + "/ps makescroll <name> <lore> " + ChatColor.DARK_AQUA + "Makes a scroll for a port you own. Costs " + plugin.getPortManager().getScrollCost() + " rubles.");
         player.sendMessage(ChatColor.AQUA + "/ps setport <name> " + ChatColor.DARK_AQUA + "Creates a new port.");
