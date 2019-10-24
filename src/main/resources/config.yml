@@ -1,6 +1,6 @@
 # PwingScrolls Configuration
 create-scroll-cost: 5
-blacklisted-worlds:
 prefix: "&7[Pwing Scrolls] "
 override-protocolsupport-ps: true
+blacklisted-worlds:
 - 'Test World'
